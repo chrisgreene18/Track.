@@ -13,6 +13,10 @@
 		EAE26AA02475F71A00577C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE26A9E2475F71A00577C04 /* Main.storyboard */; };
 		EAE26AA22475F71D00577C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE26AA12475F71D00577C04 /* Assets.xcassets */; };
 		EAE26AA52475F71D00577C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE26AA32475F71D00577C04 /* LaunchScreen.storyboard */; };
+		EAE26AAD2475FC3F00577C04 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE26AAC2475FC3F00577C04 /* StockTableViewCell.swift */; };
+		EAE26AB1248068DD00577C04 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE26AB0248068DD00577C04 /* AddItemTableViewController.swift */; };
+		EAE26AB324806B7700577C04 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE26AB224806B7700577C04 /* SalesViewController.swift */; };
+		EAE26AB5249D46B900577C04 /* requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE26AB4249D46B800577C04 /* requirements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EAE26AA12475F71D00577C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE26AA42475F71D00577C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAE26AA62475F71D00577C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE26AAC2475FC3F00577C04 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		EAE26AB0248068DD00577C04 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		EAE26AB224806B7700577C04 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
+		EAE26AB4249D46B800577C04 /* requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requirements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 		EAE26A972475F71A00577C04 /* Track. */ = {
 			isa = PBXGroup;
 			children = (
+				EAE26AB4249D46B800577C04 /* requirements.swift */,
 				EAE26A982475F71A00577C04 /* AppDelegate.swift */,
 				EAE26A9A2475F71A00577C04 /* SceneDelegate.swift */,
 				EAE26A9C2475F71A00577C04 /* ViewController.swift */,
+				EAE26AB0248068DD00577C04 /* AddItemTableViewController.swift */,
+				EAE26AB224806B7700577C04 /* SalesViewController.swift */,
+				EAE26AAC2475FC3F00577C04 /* StockTableViewCell.swift */,
 				EAE26A9E2475F71A00577C04 /* Main.storyboard */,
 				EAE26AA12475F71D00577C04 /* Assets.xcassets */,
 				EAE26AA32475F71D00577C04 /* LaunchScreen.storyboard */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE26AB5249D46B900577C04 /* requirements.swift in Sources */,
 				EAE26A9D2475F71A00577C04 /* ViewController.swift in Sources */,
+				EAE26AB324806B7700577C04 /* SalesViewController.swift in Sources */,
+				EAE26AB1248068DD00577C04 /* AddItemTableViewController.swift in Sources */,
 				EAE26A992475F71A00577C04 /* AppDelegate.swift in Sources */,
+				EAE26AAD2475FC3F00577C04 /* StockTableViewCell.swift in Sources */,
 				EAE26A9B2475F71A00577C04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
