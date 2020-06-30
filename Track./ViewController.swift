@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var stockArray = ["Item 1", "Item 2", "Item 3"]
+    var stockArray: [InventoryList] = []
+
 
     @IBOutlet weak var tableView: UITableView!
     
