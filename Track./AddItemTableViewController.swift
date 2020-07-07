@@ -8,8 +8,12 @@
 
 import UIKit
 
+var item: InventoryList!
+
 class AddItemTableViewController: UITableViewController {
     
+var item: InventoryList!
+
     
     @IBOutlet weak var nameField: UITextField!
     
@@ -21,10 +25,18 @@ class AddItemTableViewController: UITableViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if item == nil {
+            item = InventoryList(name: "", sku: "", size: "", cost: "")
+        }
+        updateUserInterface()
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        item = InventoryList(name: nameField.text, sku: skuField.text, size: sizeField.text, cost: costField.text)
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
@@ -37,6 +49,13 @@ class AddItemTableViewController: UITableViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+    }
+    
+    func updateUserInterface() {
+        nameField.text = item.name
+        sizeField.text = item.size
+        skuField.text = item.sku
+        costField.text = item.cost
     }
     
     

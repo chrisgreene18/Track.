@@ -76,6 +76,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.51195971659999995" green="0.82788705579999999" blue="0.62466599180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="itemNameLabel" destination="KFV-fL-qQS" id="qIS-Vy-0lo"/>
+                                            <outlet property="itemNumberLabel" destination="cr9-1o-ddT" id="JTR-X0-OEW"/>
+                                            <outlet property="itemSizeLabel" destination="vRT-t0-xVk" id="dbo-yk-3qE"/>
+                                            <outlet property="itemSkuLabel" destination="KoS-iX-OJO" id="GKu-vg-TNk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -111,7 +117,7 @@
                                 <rect key="frame" x="335" y="100" width="18" height="22"/>
                                 <state key="normal" title="" image="plus" catalog="system"/>
                                 <connections>
-                                    <segue destination="mb4-6S-t2f" kind="presentation" id="PZg-xS-5Wj"/>
+                                    <segue destination="mb4-6S-t2f" kind="presentation" identifier="AddItem" id="PZg-xS-5Wj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -229,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCm-ms-Nqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3481.1594202898555" y="101.78571428571428"/>
+            <point key="canvasLocation" x="3822" y="1096"/>
         </scene>
         <!--Add Item Table View Controller-->
         <scene sceneID="264-Wk-Dv4">
@@ -342,6 +348,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="qhV-58-FiF">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="NBP-xK-MT5" id="qfu-BY-4ub"/>
+                                <segue destination="9aD-td-XsE" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="XNa-2q-r7X"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -353,8 +360,9 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0GG-Iv-nVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9aD-td-XsE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3202.898550724638" y="-723.21428571428567"/>
+            <point key="canvasLocation" x="4262" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jI8-Hq-O0n">
@@ -372,7 +380,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro5-Nr-wAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="-722"/>
+            <point key="canvasLocation" x="3172" y="-595"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E8l-Oz-Zf1">

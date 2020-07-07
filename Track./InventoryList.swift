@@ -9,9 +9,8 @@
 import Foundation
 
 struct InventoryList: Codable {
-    var name: String
-    var sku: String
-    var size: Double
-    var purchaseDate: Date
-    var cost: Double
+    var name: String!
+    var sku: String!
+    var size: String!
+    var cost: String!
 }
